@@ -23,12 +23,7 @@ const FormComponent = ({ info, setInfo, handleSubmit }) => {
     setInfo({ ...info, [name]: value });
   };
   return (
-    <Grid
-      textAlign="center"
-      verticalAlign="middle"
-      direction="column"
-      style={{ width: "300" }}
-    >
+    <Grid textAlign="center" style={{ width: "300" }}>
       <p className="contact-header">
         <div>
           <a
