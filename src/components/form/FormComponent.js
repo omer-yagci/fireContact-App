@@ -24,8 +24,8 @@ const FormComponent = ({ info, setInfo, handleSubmit }) => {
   };
   return (
     <Grid textAlign="center" style={{ width: "300" }}>
-      <p className="contact-header">
-        <div>
+      <div>
+        <p className="contact-header">
           <a
             href="https://www.linkedin.com/in/omer-kagan-yagci/"
             className="design"
@@ -34,9 +34,10 @@ const FormComponent = ({ info, setInfo, handleSubmit }) => {
           >
             <code>{"oKaganYAGCI/> "}</code>
           </a>
-        </div>
-        <span className="design header">design</span>
-      </p>
+          <br />
+          <span className="design header">design</span>
+        </p>
+      </div>
       <h2 className="contact-header">Add Contact</h2>
 
       <Box style={{ backgroundColor: "white", padding: "20px" }}>
