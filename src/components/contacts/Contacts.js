@@ -54,20 +54,14 @@ const Contacts = ({ editUser }) => {
               ) : (
                 // Bilgiler geldiği zaman aşağıya yazılacak kodlar çalışsın
                 contactList?.map((item, index) => (
-                  <TableRow>
-                    <TableCell textAlign="center">
-                      {item.username.toUpperCase()}
-                    </TableCell>
-                    <TableCell textAlign="center">{item.phoneNumber}</TableCell>
-                    <TableCell textAlign="center">{item.gender}</TableCell>
-                    <TableCell
-                      textAlign="center"
-                      onClick={() => DeleteUser(item.id)}
-                    >
+                  <TableRow key={index}>
+                    <TableCell>{item.username.toUpperCase()}</TableCell>
+                    <TableCell>{item.phoneNumber}</TableCell>
+                    <TableCell>{item.gender}</TableCell>
+                    <TableCell onClick={() => DeleteUser(item.id)}>
                       <DeleteIcon />
                     </TableCell>
                     <TableCell
-                      textAlign="center"
                       onClick={() =>
                         editUser(
                           item.id,
