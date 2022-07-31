@@ -58,10 +58,14 @@ const Contacts = ({ editUser }) => {
                     <TableCell>{item.username.toUpperCase()}</TableCell>
                     <TableCell>{item.phoneNumber}</TableCell>
                     <TableCell>{item.gender}</TableCell>
-                    <TableCell onClick={() => DeleteUser(item.id)}>
+                    <TableCell
+                      className="delete"
+                      onClick={() => DeleteUser(item.id)}
+                    >
                       <DeleteIcon />
                     </TableCell>
                     <TableCell
+                      className="edit"
                       onClick={() =>
                         editUser(
                           item.id,
