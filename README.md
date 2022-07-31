@@ -12,7 +12,7 @@ Project aims to create a FireContact App.
 
 https://contactapp-wfirebase.netlify.app/
 
-![!Form](firecontact-app.gif)
+![Form](firecontact-app.gif)
 
 ## Objective
 
