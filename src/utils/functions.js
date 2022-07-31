@@ -9,6 +9,7 @@ import {
   update,
 } from "firebase/database";
 import { useState, useEffect } from "react";
+import Toastify from "./toastify";
 
 // Bilgi Ekleme
 export const AddUser = (info) => {
@@ -47,6 +48,7 @@ export const useFetch = () => {
 export const DeleteUser = (id) => {
   const db = getDatabase(firebase);
   remove(ref(db, "users/" + id));
+  Toastify("Deleted Successfully");
 };
 
 export const UpdateUser = (info) => {
