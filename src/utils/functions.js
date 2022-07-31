@@ -10,17 +10,17 @@ import {
 } from "firebase/database";
 import { useState, useEffect } from "react";
 
-// // Bilgi Ekleme
-// export const AddUser = (info) => {
-//   const db = getDatabase(firebase);
-//   const userRef = ref(db, "users/");
-//   const newUserRef = push(userRef);
-//   set(newUserRef, {
-//     username: info.username,
-//     phoneNumber: info.phoneNumber,
-//     gender: info.gender,
-//   });
-// };
+// Bilgi Ekleme
+export const AddUser = (info) => {
+  const db = getDatabase(firebase);
+  const userRef = ref(db, "users/");
+  const newUserRef = push(userRef);
+  set(newUserRef, {
+    username: info.username,
+    phoneNumber: info.phoneNumber,
+    gender: info.gender,
+  });
+};
 
 // Bilgi Çağırma
 
